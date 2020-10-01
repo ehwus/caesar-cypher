@@ -22,6 +22,3 @@ def caesar_cipher(string, shift)
     # convert array back to string and return
     end.join("")
 end
-
-# test - expecting "Bmfy f xywnsl!"
-p caesar_cipher("What a string!", 5)
