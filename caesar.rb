@@ -1,5 +1,15 @@
 def caesar_cipher(string, shift)
-    string.split("").map { |char| p (char.ord() + shift).chr } 
+    # Iterate over all chars in string
+    string.split("").map do |char|
+        # Check if character
+        if char.match(/[a-zA-Z]/)
+            # Add shift if so
+            (char.ord() + shift).chr 
+        else
+            # Use just the input if not
+            char
+        end
+    end
 end
 
 # test - expecting "Bmfy f xywnsl!"
